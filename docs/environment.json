@@ -1,0 +1,27 @@
+{
+  "tested_python": "3.12",
+  "platform": "Windows; portable Python CLI",
+  "kernel_source_sha256": "3a0640cf73a5357b58d682b4d42ce3d6de670d3165d73fc43ad8132383013c07",
+  "initial_workspace_packages": {
+    "numpy": "2.4.4",
+    "Pillow": "12.2.0",
+    "opencv-python-headless": "4.12.0.88",
+    "scikit-image": "0.26.0",
+    "matplotlib": "3.10.9"
+  },
+  "packages": {
+    "numpy": "2.2.6",
+    "Pillow": "12.2.0",
+    "opencv-python-headless": "4.12.0.88",
+    "scikit-image": "0.26.0",
+    "matplotlib": "3.10.9"
+  },
+  "validation": {
+    "isolated_install": true,
+    "pip_check": "PASS",
+    "unit_tests": 4,
+    "archived_result_reproduction": "PASS",
+    "dependency_lock": "requirements-lock.txt",
+    "note": "Original experiment measurements were not regenerated; archived aggregations and gate tests passed in both environments."
+  }
+}

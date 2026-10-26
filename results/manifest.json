@@ -1,0 +1,74 @@
+[
+  {
+    "file": "results/primary_per_pair.csv",
+    "sha256": "b075fa978268bace9e623d5a194ecd42f487ccb90bce4364acdcadb684813b9b",
+    "bytes": 3103934,
+    "source": "06_experiments/postprocess_gate_ablation_20261026/results/analysis/primary_per_pair.csv"
+  },
+  {
+    "file": "results/primary_by_group.csv",
+    "sha256": "3287cb7ce1bbcff90d85b875a30b33b2c95c29c7a9649f8ae6fcf2c035e33205",
+    "bytes": 38055,
+    "source": "06_experiments/postprocess_gate_ablation_20261026/results/analysis/primary_by_group.csv"
+  },
+  {
+    "file": "results/primary_by_level.csv",
+    "sha256": "07ce4df2a63e0ba6161d78414392bfb12b7a05f153fafc78357213bca3c07f35",
+    "bytes": 68427,
+    "source": "06_experiments/postprocess_gate_ablation_20261026/results/analysis/primary_by_level.csv"
+  },
+  {
+    "file": "results/primary_regressions.csv",
+    "sha256": "dd112336e7d31aaba747cb6bab3424ac92c306ab4098077abdb8c6a686908e35",
+    "bytes": 4197,
+    "source": "06_experiments/postprocess_gate_ablation_20261026/results/analysis/primary_regressions.csv"
+  },
+  {
+    "file": "results/grid_by_scene.csv",
+    "sha256": "9c4855c0c8746984493bbd448e8f1ecf4823ad3ea2c61c2bab1c5bfdfb213b18",
+    "bytes": 582435,
+    "source": "06_experiments/postprocess_gate_ablation_20261026/results/analysis/grid_by_scene.csv"
+  },
+  {
+    "file": "results/grid_by_group.csv",
+    "sha256": "091762afddb5d51d779d4e4633b2205205b1199e814c969d0710d1f7cbfdabca",
+    "bytes": 262070,
+    "source": "06_experiments/postprocess_gate_ablation_20261026/results/analysis/grid_by_group.csv"
+  },
+  {
+    "file": "results/grid_region_masks.csv",
+    "sha256": "e4013e0d6007cf476a9543529340128a1c1c769d4e762488b24e2494dd52749b",
+    "bytes": 47770,
+    "source": "06_experiments/postprocess_gate_ablation_20261026/results/analysis/grid_region_masks.csv"
+  },
+  {
+    "file": "results/real_by_level.csv",
+    "sha256": "2d086af94d3b270bceb25f0e02926321dac7512561f1957e7b4b71a4b78e2d85",
+    "bytes": 5302,
+    "source": "06_experiments/SCI_RUAS_comparison_20261026/results/analysis/real_by_level.csv"
+  },
+  {
+    "file": "results/real_per_pair.csv",
+    "sha256": "4e6dab6c08a337d10565d19a84db4ae2007a753255c496f6b6dcddb837c79de0",
+    "bytes": 199501,
+    "source": "06_experiments/SCI_RUAS_comparison_20261026/results/analysis/real_per_pair.csv"
+  },
+  {
+    "file": "results/selection_per_pair.csv",
+    "sha256": "6527cb1d62ffda177aae6e05242dbcde6927687825f7e4fc31ddbbefa0f3858c",
+    "bytes": 668878,
+    "source": "06_experiments/postprocess_gate_ablation_20261026/selection_diagnostic_20261026/per_pair.csv"
+  },
+  {
+    "file": "results/selection_overall.csv",
+    "sha256": "33e67fbdbc18329d67e33031cf9506a0c693a706ac6afa04a4b0f31e407cdad8",
+    "bytes": 3730,
+    "source": "06_experiments/postprocess_gate_ablation_20261026/selection_diagnostic_20261026/overall.csv"
+  },
+  {
+    "file": "results/selections.json",
+    "sha256": "f7ab26bc5636d1732530bc892596f0a754a263d284a2d55e3dcd3c11c3b6b737",
+    "bytes": 5968,
+    "source": "06_experiments/postprocess_gate_ablation_20261026/selection_diagnostic_20261026/selections.json"
+  }
+]
