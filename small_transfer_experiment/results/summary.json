@@ -1,0 +1,34 @@
+{
+  "pairs": 50,
+  "scene_ids": 37,
+  "input_pair_mean_psnr": 5.692959528641018,
+  "models": {
+    "Zero-DCE++": {
+      "original_pair_mean": 9.040116279395805,
+      "gated_pair_mean": 8.785392026565265,
+      "delta_pair_mean": -0.2547242528305402,
+      "regressions": 50,
+      "worst_delta": -3.139921679054032,
+      "original_scene_mean": 8.980831277498897,
+      "gated_scene_mean": 8.755135827473117
+    },
+    "SCI medium": {
+      "original_pair_mean": 8.262132934862562,
+      "gated_pair_mean": 8.167728663859831,
+      "delta_pair_mean": -0.09440427100273112,
+      "regressions": 50,
+      "worst_delta": -0.7306639596460212,
+      "original_scene_mean": 8.183392066528002,
+      "gated_scene_mean": 8.097895270216277
+    },
+    "RUAS journal": {
+      "original_pair_mean": 7.512425723312247,
+      "gated_pair_mean": 7.464367272209817,
+      "delta_pair_mean": -0.04805845110243058,
+      "regressions": 48,
+      "worst_delta": -0.3944651724825228,
+      "original_scene_mean": 7.479013316810541,
+      "gated_scene_mean": 7.43352141278537
+    }
+  }
+}

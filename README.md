@@ -10,7 +10,7 @@ The gate blends an existing enhancement output with its input using mean encoded
 2. Score a supplied output against a supplied reference with the paper's metric settings.
 3. Recompute overall scores, regressions, parameter sensitivity, and shared LOSO selection from archived numerical measurements; regenerate exposure and parameter plots.
 
-This is **not** an end-to-end rerun of the three enhancement networks. No dataset pixels, model weights, manuscript, author declarations, credentials, or local machine paths are distributed. Numeric measurements are not a substitute for independent image-level validation.
+The main archived MILL workflow is **not** an end-to-end rerun of the three enhancement networks. A separate SMALL transfer runner is documented below and requires separately obtained upstream models and data. No dataset pixels, model weights, manuscript, author declarations, credentials, or local machine paths are distributed. Numeric measurements are not a substitute for independent image-level validation.
 
 ## Install and reproduce
 
@@ -54,6 +54,10 @@ The input baseline is 20.043 dB / 0.7732. Population: **120 validation pairs = 1
 ## Exploratory learned gate comparison
 
 The repository also includes the [`rf_loso_failure`](rf_loso_failure/README.md) scripts and archived numerical scores for a leave-one-scene-identifier-out random-forest comparison. On these previously examined scenes, the five-feature model improves overall PSNR versus the fixed gate but loses approximately 3.9–5.0 dB at the brightest level; mean-only and training-fold-selected constant controls have higher overall PSNR. The minimal repository can reproduce the numerical summaries; a full refit and pixel-level evaluation require separately retained features, full grid scores, images, and floating-point enhancement outputs. The results do not establish why the learned predictor regresses or how it performs on unseen datasets.
+
+## SMALL test transfer and CPU timing
+
+The [`small_transfer_experiment`](small_transfer_experiment/README.md) directory contains the frozen protocol, full per-pair PSNR data, a configurable three-model evaluation script and gate-only CPU benchmark. With unchanged parameters, mean PSNR decreased by 0.255, 0.094 and 0.048 dB for Zero-DCE++, SCI and RUAS, respectively, on 50 resized SMALL test pairs. This negative transfer result is conditional on the released reference pairing; the underlying captures are not certified pixel-aligned. Scripts require the data and upstream checkpoints separately.
 
 ## Limits that must accompany reuse
 

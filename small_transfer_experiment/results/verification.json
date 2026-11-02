@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "pairs_counted": 50,
+  "independent_scalar_blend_recomputed_pairs": [
+    "pair_000007",
+    "pair_000429",
+    "pair_000675"
+  ],
+  "models_per_pair": 3,
+  "float_psnr_tolerance_db": 1e-06,
+  "mean_and_regression_counts": "verified",
+  "reference_correspondence": "not verified"
+}
