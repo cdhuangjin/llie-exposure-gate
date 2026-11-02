@@ -1,0 +1,13 @@
+# Exploratory learned-gate LOSO comparison
+
+This directory contains scripts and archived numerical results for a per-checkpoint leave-one-scene-identifier-out comparison of a five-feature random forest, a mean-only random forest, the fixed gate, and a training-fold-selected constant. The 12 MILL validation identifiers had been examined during development; these results are exploratory and do not establish independent generalization or a causal diagnosis of overfitting. The enhanced images and original data are not distributed here.
+
+Each of the 36 folds fits two 50-tree forests (maximum depth 3, seed 42) per feature configuration. Training targets average all parameter-grid nodes within 0.05 dB of each training image's best reference-based PSNR; the average itself need not be near optimal. Each held-out identifier is absent from its training data and the constant selection. Pixel scoring uses archived float outputs and references, not saved PNGs. The five-feature model gains about 0.5–0.6 dB overall relative to the original fixed gate but loses 3.9–5.0 dB at Level 10; the mean-only model and fold-selected constant are stronger overall for these checkpoints.
+
+## What is reproducible here
+
+`python rf_loso_failure/summarize.py` checks the 2,160 retained numerical scores and regenerates the compact results table. It needs pandas and NumPy; it does not refit the regressors or recompute image scores. `archived_results` contains derived evaluation scores, predicted parameters and fold membership, not images, weights or the complete input features and per-image grid.
+
+The full scripts `extract_features.py`, `run.py` and `verify.py` require the separately retained research project and its dataset/float-output archive; these inputs are **not** included in this minimal repository. Obtain those materials from the corresponding author and the original dataset/model providers under their respective terms. Set `LLIE_PROJECT_ROOT` to the project directory and `LLIE_DATA_ROOT` to its `03_datasets` storage root. `extract_features.py` creates `content_features_oracle_20261102` under the data root; `run.py` creates `content_gate_loso_20261102` under that root and a `results` directory alongside the scripts. Both refuse to overwrite existing outputs. Run them in that order, followed by `verify.py`. Full execution needs NumPy, pandas, SciPy, Pillow, psutil, scikit-learn, OpenCV and scikit-image, as well as the original source modules and arrays. The scripts check source hashes; this is not an end-to-end regeneration of network predictions.
+
+For exact refitting, regenerate targets in memory from the grid; reloading the rounded target CSV can perturb tied tree splits. No portable deployment or runtime claim follows from these experiments.

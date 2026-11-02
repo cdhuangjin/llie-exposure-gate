@@ -51,6 +51,10 @@ Input/output NPY arrays must be floating-point H脳W脳3 RGB. PNG images must be
 
 The input baseline is 20.043 dB / 0.7732. Population: **120 validation pairs = 12 published scene IDs 脳 10 intensity levels**, previously exposed during development. IDs `Test1`鈥揱Test4` in this release are part of the selected validation group; their names do not imply access to the sealed test split.
 
+## Exploratory learned gate comparison
+
+The repository also includes the [`rf_loso_failure`](rf_loso_failure/README.md) scripts and archived numerical scores for a leave-one-scene-identifier-out random-forest comparison. On these previously examined scenes, the five-feature model improves overall PSNR versus the fixed gate but loses approximately 3.9–5.0 dB at the brightest level; mean-only and training-fold-selected constant controls have higher overall PSNR. The minimal repository can reproduce the numerical summaries; a full refit and pixel-level evaluation require separately retained features, full grid scores, images, and floating-point enhancement outputs. The results do not establish why the learned predictor regresses or how it performs on unseen datasets.
+
 ## Limits that must accompany reuse
 
 - These are three specific public checkpoints, not original-paper score reproduction or all LLIE models.
